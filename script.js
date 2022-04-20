@@ -41,3 +41,25 @@ vidBtn.forEach(btn => {
         document.querySelector('#video-slider').src = src;
     });
 }); 
+
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+},
+breakpoints: {
+    640: {
+        slidesPreview: 1,
+    },
+    768: {
+        slidesPreview: 2,
+    },
+    1024: {
+        slidesPreview: 3,
+    },
+    
+},
+});
